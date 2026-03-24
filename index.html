@@ -7,7 +7,7 @@
     <style>
         :root { --primary: #0078d4; --danger: #d13438; --warning: #ff8c00; --success: #107c10; --bg: #f3f2f1; --text: #323130; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 10px; display: flex; flex-direction: column; align-items: center; }
-        .update-info { margin-bottom: 15px; font-size: 13px; color: #605e5c; }
+        .update-info { margin-bottom: 15px; font-size: 13px; color: #605e5c; text-align: center; }
         .top-btn { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 550px; height: 80px; background-color: #107c10; color: white; text-decoration: none; border-radius: 12px; font-weight: bold; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid #0d620d; text-align: center; }
         .app-container { width: 100%; max-width: 550px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); box-sizing: border-box; }
         .emergency-btn { background: var(--danger); color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 16px; border-radius: 8px; font-weight: bold; font-size: 18px; margin-bottom: 15px; border: 2px solid #a4262c; }
@@ -39,65 +39,66 @@
         <input type="text" id="search" class="search-box" placeholder="Szukaj produktu lub UFI...">
 
         <div class="category-item">
-            <div class="category-header" onclick="toggle(this)"><span>GAZY TECHNICZNE</span><span class="arrow">▼</span></div>
+            <div class="category-header" onclick="toggle(this)"><span>GAZY TECHNICZNE (4)</span><span class="arrow">▼</span></div>
             <ul class="submenu">
-                <li><a href="Acetylen.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Acetylen</span><div class="ufi-box"></div></a></li>
-                <li><a href="Alpen_camping_gas.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Alpen Camping Gas</span><div class="ufi-box"></div></a></li>
-                <li><a href="Propan_butan.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Propan-Butan</span><div class="ufi-box"></div></a></li>
-                <li><a href="Tlen_sprzężony.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Tlen Sprężony</span><div class="ufi-box"></div></a></li>
+                <li><a href="Acetylen.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Acetylen</span></a></li>
+                <li><a href="Alpen_camping_gas.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Alpen Camping Gas</span></a></li>
+                <li><a href="Propan_butan.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Propan-Butan</span></a></li>
+                <li><a href="Tlen_sprzężony.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Tlen Sprężony</span></a></li>
             </ul>
         </div>
 
         <div class="category-item">
-            <div class="category-header" onclick="toggle(this)"><span>PALIWA I OLEJE</span><span class="arrow">▼</span></div>
+            <div class="category-header" onclick="toggle(this)"><span>PALIWA I SMARY (10)</span><span class="arrow">▼</span></div>
             <ul class="submenu">
-                <li><a href="Olej_napedowy_handlowy.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Olej Napędowy (ON)</span><div class="ufi-box"></div></a></li>
-                <li><a href="Benzyny_handlowe.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Benzyny Handlowe</span><div class="ufi-box"></div></a></li>
-                <li><a href="BASE_OIL_SN_600.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Base Oil SN 600</span><div class="ufi-box"></div></a></li>
-                <li><a href="SHELL_OMALA_GX_460.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Shell Omala GX 460</span><div class="ufi-box"></div></a></li>
-                <li><a href="WD_40.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">WD-40</span><div class="ufi-box"></div></a></li>
-                <li><a href="Denaturat_D7.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Denaturat D7</span><div class="ufi-box"></div></a></li>
+                <li><a href="Olej_napedowy_handlowy.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Olej Napędowy (ON)</span></a></li>
+                <li><a href="Benzyny_handlowe.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Benzyny Handlowe</span></a></li>
+                <li><a href="BASE_OIL_SN_600.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Base Oil SN 600</span></a></li>
+                <li><a href="SHELL_OMALA_GX_460.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Shell Omala GX 460</span></a></li>
+                <li><a href="WD_40.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">WD-40</span></a></li>
+                <li><a href="Denaturat_D7.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Denaturat D7</span></a></li>
+                <li><a href="MALSOLWENT1.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Malsolwent 1</span></a></li>
+                <li><a href="Kem_Kromik_6630_High_Solid.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Kem-Kromik 6630 High Solid</span></a></li>
+                <li><a href="Kem_Kromik_6630_Primer.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Kem-Kromik 6630 Primer</span></a></li>
+                <li><a href="KCH_SRODEK_ANTYADHEZYJNY.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Środek Antyadhezyjny</span></a></li>
             </ul>
         </div>
 
         <div class="category-item">
-            <div class="category-header" onclick="toggle(this)"><span>PIANY, SPREJE I CHEMIA</span><span class="arrow">▼</span></div>
+            <div class="category-header" onclick="toggle(this)"><span>PIANY, SPREJE I CHEMIA (10)</span><span class="arrow">▼</span></div>
             <ul class="submenu">
-                <li><a href="Piana_montażowa.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Piana Montażowa</span><div class="ufi-box"></div></a></li>
-                <li><a href="plana_iniwersalna_montażowa_STALCO.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Piana Stalco</span><div class="ufi-box"></div></a></li>
-                <li><a href="CLEANER_PU.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Cleaner PU</span><div class="ufi-box"></div></a></li>
-                <li><a href="Preparat_alucynk.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Preparat Alucynk</span><div class="ufi-box"></div></a></li>
-                <li><a href="KCH_SRODEK_ANTYADHEZYJNY.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Środek Antyadhezyjny</span><div class="ufi-box"></div></a></li>
-                <li><a href="roxtec_fire_sealant.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Roxtec Fire Sealant</span><div class="ufi-box"></div></a></li>
-                <li><a href="Rozcieńczalnik_nitrosds.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Rozcieńczalnik Nitro</span><div class="ufi-box"></div></a></li>
-                <li><a href="ŚNIEŻKA_SUPERMAL.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Śnieżka Supermal</span><div class="ufi-box"></div></a></li>
-                <li><a href="Masa_bitumiczna_KCH_dysperbit.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Masa Dysperbit</span><div class="ufi-box"></div></a></li>
-                <li><a href="SIKA_BOOM_583.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Sika Boom 583</span><div class="ufi-box"></div></a></li>
+                <li><a href="Piana_montażowa.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Piana Montażowa</span><div class="ufi-box">UFI: XW10-E0D7-P00S-Y8H3</div></a></li>
+                <li><a href="plana_iniwersalna_montażowa_STALCO.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Piana Stalco Uniwersalna</span></a></li>
+                <li><a href="SIKA_BOOM_583.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Sika Boom 583</span></a></li>
+                <li><a href="CLEANER_PU.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Cleaner PU</span></a></li>
+                <li><a href="Preparat_alucynk.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Preparat Alucynk</span></a></li>
+                <li><a href="roxtec_fire_sealant.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Roxtec Fire Sealant</span></a></li>
+                <li><a href="Rozcieńczalnik_nitrosds.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Rozcieńczalnik Nitro</span></a></li>
+                <li><a href="ŚNIEŻKA_SUPERMAL.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Śnieżka Supermal</span></a></li>
+                <li><a href="Masa_bitumiczna_KCH_dysperbit.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Masa Bitumiczna Dysperbit</span></a></li>
+                <li><a href="PU-srodek-do-codziennej-pielegnacji-karta-charakterystyki.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">PU Środek Pielęgnacyjny</span></a></li>
             </ul>
         </div>
 
         <div class="category-item">
-            <div class="category-header" onclick="toggle(this)"><span>BUDOWLANE I ŻYWICE</span><span class="arrow">▼</span></div>
+            <div class="category-header" onclick="toggle(this)"><span>BUDOWLANE, KOTWY I ŻYWICE (16)</span><span class="arrow">▼</span></div>
             <ul class="submenu">
-                <li><a href="GH530_A.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox GH 530 (A)</span><div class="ufi-box"></div></a></li>
-                <li><a href="GH530_B.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox GH 530 (B)</span><div class="ufi-box"></div></a></li>
-                <li><a href="StoPox_BB_OS_Komp_A.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox BB OS (A)</span><div class="ufi-box"></div></a></li>
-                <li><a href="StoPox_BB_OS_Komp_B.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox BB OS (B)</span><div class="ufi-box"></div></a></li>
-                <li><a href="Kem_Kromik_6630_High_Solid.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Kem-Kromik High Solid</span><div class="ufi-box"></div></a></li>
-                <li><a href="Kem_Kromik_6630_Primer.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Kem-Kromik Primer</span><div class="ufi-box"></div></a></li>
-                <li><a href="HIT_HY_200.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Hilti HIT-HY-200</span><div class="ufi-box"></div></a></li>
-                <li><a href="HIT_HY_270.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Hilti HIT-HY-270</span><div class="ufi-box"></div></a></li>
-                <li><a href="Weber_PG212.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber PG212</span><div class="ufi-box"></div></a></li>
-                <li><a href="Weber_rep_756.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber Rep 756</span><div class="ufi-box"></div></a></li>
-                <li><a href="Weber_tec_901.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber Tec 901</span><div class="ufi-box"></div></a></li>
-                <li><a href="Weber_tec_Superflex_D_24_komp.A.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber Superflex D24</span><div class="ufi-box"></div></a></li>
-                <li><a href="Weberep_KB_duo_2023.07.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weberep KB Duo</span><div class="ufi-box"></div></a></li>
-                <li><a href="Mieszanka_betonowa.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Mieszanka Betonowa 1</span><div class="ufi-box"></div></a></li>
-                <li><a href="Mieszanka_betonowa_2.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Mieszanka Betonowa 2</span><div class="ufi-box"></div></a></li>
-                <li><a href="Drohart.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Drohart</span><div class="ufi-box"></div></a></li>
-                <li><a href="QB.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Karta QB</span><div class="ufi-box"></div></a></li>
-                <li><a href="M_15_zaprawa_spoiwa.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">M-15 Zaprawa</span><div class="ufi-box"></div></a></li>
-                <li><a href="MALSOLWENT1.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Malsolwent 1</span><div class="ufi-box"></div></a></li>
+                <li><a href="GH530_A.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox GH 530 (Komp. A)</span></a></li>
+                <li><a href="GH530_B.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox GH 530 (Komp. B)</span></a></li>
+                <li><a href="StoPox_BB_OS_Komp_A.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox BB OS (Komp. A)</span></a></li>
+                <li><a href="StoPox_BB_OS_Komp_B.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">StoPox BB OS (Komp. B)</span></a></li>
+                <li><a href="HIT_HY_200.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Hilti HIT-HY-200</span></a></li>
+                <li><a href="HIT_HY_270.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Hilti HIT-HY-270</span></a></li>
+                <li><a href="Weber_PG212.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber PG212</span></a></li>
+                <li><a href="Weber_rep_756.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber Rep 756</span></a></li>
+                <li><a href="Weber_tec_901.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber Tec 901</span></a></li>
+                <li><a href="Weber_tec_Superflex_D_24_komp.A.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weber Superflex D24</span></a></li>
+                <li><a href="Weberep_KB_duo_2023.07.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Weberep KB Duo</span></a></li>
+                <li><a href="Mieszanka_betonowa.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Mieszanka Betonowa 1</span></a></li>
+                <li><a href="Mieszanka_betonowa_2.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Mieszanka Betonowa 2</span></a></li>
+                <li><a href="M_15_zaprawa_spoiwa.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Zaprawa M-15</span></a></li>
+                <li><a href="Drohart.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Drohart</span></a></li>
+                <li><a href="QB.pdf" class="file-item"><span class="pdf-tag">PDF</span><span class="product-name">Masa QB</span></a></li>
             </ul>
         </div>
 
@@ -105,7 +106,10 @@
     </div>
 
     <script>
+        // Rozwijanie kategorii
         function toggle(el) { el.classList.toggle('active'); }
+
+        // Wyszukiwarka
         document.getElementById('search').addEventListener('input', function(e) {
             let filter = e.target.value.toLowerCase();
             document.querySelectorAll('.category-item').forEach(cat => {
@@ -129,6 +133,12 @@
                 }
             });
         });
+
+        // Rejestracja Trybu Offline (Service Worker)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+            .then(() => console.log("Aplikacja gotowa do pracy offline"));
+        }
     </script>
 </body>
 </html>
